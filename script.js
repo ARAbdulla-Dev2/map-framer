@@ -264,6 +264,7 @@ function fetchCityData() {
         });
 }
 
+/*
 // Function to animate a polyline
 function animatePolyline(points) {
     // Create an empty polyline
@@ -364,6 +365,7 @@ function animatePolyline(points) {
     // Start animation
     animate();
 }
+*/
 
 // Process URL hash - updated version with better city matching
 function processHash() {
