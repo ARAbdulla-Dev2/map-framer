@@ -37,12 +37,12 @@ var cityAliases = {}; // For handling alternative names and simplified matches
 // Custom icons
 var customIcons = {
     start: L.icon({
-        iconUrl: './assets/img/start-marker.png',
+        iconUrl: './start-marker.png',
         iconSize: [27, 27],
         iconAnchor: [12, 12]
     }),
     end: L.icon({
-        iconUrl: './assets/img/start-marker.png',
+        iconUrl: './start-marker.png',
         iconSize: [27, 27],
         iconAnchor: [12, 12]
     }),
