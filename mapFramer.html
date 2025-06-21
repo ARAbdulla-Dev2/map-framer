@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sri Lanka Map with Dynamic Markers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: calc(100vh - 5px);
+            position: relative;
+        }
+        #loading {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: none;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.2);
+            z-index: 500;
+            pointer-events: none;
+            user-select: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .watermark img {
+            opacity: 0.2;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading locations...</div>
+    <div id="map"></div>
+    <!-- Add either text or image watermark -->
+    <div class="watermark" id="watermark">EUROLANKA</div>
+    <!-- Or use an image: -->
+    <!-- <div class="watermark"><img src="watermark.png" alt="Confidential"></div> -->
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./assets/mapFramer/script.js"></script>
+</body>
+</html>
