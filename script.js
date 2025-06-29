@@ -80,7 +80,7 @@ function fetchDistrictData() {
 
 // Fetch city data
 function fetchCityData() {
-    return fetch('https://raw.githubusercontent.com/aslamanver/srilanka-cities/refs/heads/master/cities.sql')
+    return fetch('https://itinerary.arabdullah.top/api/data/cities.sql')
         .then(res => res.text())
         .then(data => {
             const matches = data.match(/INSERT INTO `cities`[^;]+;/g) || [];
