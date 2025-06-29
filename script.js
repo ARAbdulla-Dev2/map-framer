@@ -2,7 +2,7 @@
 var map = L.map('map').setView([7.8731, 80.7718], 7);
 
 // Base map layer
-var CartoDB_VoyagerLabelsUnder = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+var CartoDB_VoyagerLabelsUnder = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 7,
     minZoom: 7
 }).addTo(map);
